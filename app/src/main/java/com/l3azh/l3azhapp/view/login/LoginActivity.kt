@@ -2,7 +2,8 @@ package com.l3azh.l3azhapp.view.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import l3azhapp.databinding.ActivityLoginBinding
+import com.l3azh.l3azhapp.adapter.RoleSpinnerAdapter
+import com.l3azh.l3azhapp.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 

@@ -44,7 +44,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/username_label"
-            android:textCursorDrawable="@drawable/cursor_edit_text_red_color" />
+            android:textCursorDrawable="@drawable/cursor_edit_text_red_color"
+            tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -62,7 +63,7 @@
         app:boxStrokeWidthFocused="0dp"
         app:endIconMode="password_toggle"
         app:hintTextColor="@android:color/holo_red_dark"
-        app:layout_constraintBottom_toTopOf="@+id/button_sign_in"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_layout_spinner_role"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,21 +76,52 @@
             android:layout_height="wrap_content"
             android:hint="@string/password_label"
             android:inputType="textPassword"
-            android:textCursorDrawable="@drawable/cursor_edit_text_red_color" />
+            android:textCursorDrawable="@drawable/cursor_edit_text_red_color"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_spinner_role"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/text_input_layout_color"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_password"
+        app:startIconDrawable="@drawable/ic_baseline_role_24">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/edit_text_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/role_label"
+            android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/signin_label"
         android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/signin_label"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textview_forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_password" />
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_spinner_role" />
 
     <TextView
         android:id="@+id/textview_forgot_password"
