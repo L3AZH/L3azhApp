@@ -27,4 +27,8 @@
         <item name="background">@color/red_d20000</item>
     </style>
 
+    <style name="rounded_corner">
+        <item name="cornerSize">20dp</item>
+    </style>
+
 </resources>

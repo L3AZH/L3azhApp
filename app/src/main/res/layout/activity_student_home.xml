@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.home_student.StudentHomeActivity">
+    tools:context=".view.student.StudentHomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

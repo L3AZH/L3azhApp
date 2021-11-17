@@ -12,6 +12,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
+import java.net.SocketTimeoutException
 import java.util.*
 import javax.inject.Inject
 
@@ -31,18 +32,26 @@ class SigninViewModel(application: Application) : AndroidViewModel(application) 
         role: String
     ): Deferred<Map<String, Any>> = CoroutineScope(Dispatchers.Default).async {
         var result: MutableMap<String, Any> = mutableMapOf()
-        val response = repository.login(username, password, role)
-        if (response.isSuccessful) {
-            SharePreferenceHelper.saveToken(context, response.body()!!.data.token)
-            result.put("code", response.body()!!.code)
-            result.put("message", response.body()!!.data.message)
-            result.put("flag", response.body()!!.flag)
+        try{
+            val response = repository.login(username, password, role)
+            if (response.isSuccessful) {
+                SharePreferenceHelper.saveToken(context, response.body()!!.data.token)
+                SharePreferenceHelper.saveUsername(context, username)
+                result.put("code", response.body()!!.code)
+                result.put("message", response.body()!!.data.message)
+                result.put("flag", response.body()!!.flag)
+            }
+            else{
+                val errorRes = ErrorResData.convertErrorBodyToErrorRes(response.errorBody()!!)
+                result.put("code", errorRes.code)
+                result.put("message", errorRes.data.message)
+                result.put("flag", errorRes.flag)
+            }
         }
-        else{
-            val errorRes = ErrorResData.convertErrorBodyToErrorRes(response.errorBody()!!)
-            result.put("code", errorRes.code)
-            result.put("message", errorRes.data.message)
-            result.put("flag", errorRes.flag)
+        catch (timeoutEx: SocketTimeoutException){
+            result.put("code", 408)
+            result.put("message", timeoutEx.message!!.toString())
+            result.put("flag", false)
         }
         result
     }

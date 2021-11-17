@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.home_student.home_fragment.StudentInfoFragment">
+    tools:context=".view.student.home_fragment.StudentInfoFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,6 +21,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:elevation="20dp"
+                android:backgroundTint="@color/gray_light_F7F3F2"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,10 +33,12 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shape_image_view_avatar_of_student"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_margin="15dp"
                         android:scaleType="centerCrop"
+                        android:backgroundTint="@color/white"
                         app:shapeAppearanceOverlay="@style/circle" />
 
                     <LinearLayout

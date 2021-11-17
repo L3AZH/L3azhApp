@@ -4,6 +4,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/studentInfoFragment"
+        android:title="@string/info_label_menu_drawer_nav"
+        android:icon="@drawable/ic_baseline_info_32"/>
+
+    <item
         android:id="@+id/logout_option"
         android:title="@string/logout_label"
         android:icon="@drawable/ic_baseline_logout_32"/>

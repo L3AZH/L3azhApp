@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="red_d20000">#FFD20000</color>
+    <color name="human_light_FEF4F2">#FEF4F2</color>
+    <color name="gray_light_F7F3F2">#F7F3F2</color>
 </resources>

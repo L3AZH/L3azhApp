@@ -12,8 +12,8 @@ import com.l3azh.l3azhapp.R
 import com.l3azh.l3azhapp.databinding.FragmentSplashBinding
 import com.l3azh.l3azhapp.utils.SharePreferenceHelper
 import com.l3azh.l3azhapp.utils.Utils
-import com.l3azh.l3azhapp.view.home_student.StudentHomeActivity
-import com.l3azh.l3azhapp.view.home_teacher.TeacherHomeActivity
+import com.l3azh.l3azhapp.view.student.StudentHomeActivity
+import com.l3azh.l3azhapp.view.teacher.TeacherHomeActivity
 import com.l3azh.l3azhapp.viewmodel.login.SplashViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

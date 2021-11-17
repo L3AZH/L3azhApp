@@ -7,7 +7,7 @@ import android.util.Log
 class Constant {
     companion object{
         val TAG = Constant.javaClass.simpleName
-        const val BASE_URL = "http://192.168.1.11:7777/l3azh/api/"
+        const val BASE_URL = "http://192.168.1.10:7777/l3azh/api/"
         const val BASIC_AUTH_USERNAME = "LAMHATUANANH"
         const val BASIC_AUTH_PASSWORD = "N17DCCN004"
 

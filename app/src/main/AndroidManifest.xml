@@ -15,11 +15,11 @@
         android:theme="@style/Theme.L3azhChat"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".view.home_teacher.TeacherHomeActivity"
+            android:name=".view.teacher.TeacherHomeActivity"
             android:exported="true"
             android:theme="@style/RedTheme"/>
         <activity
-            android:name=".view.home_student.StudentHomeActivity"
+            android:name=".view.student.StudentHomeActivity"
             android:exported="true"
             android:theme="@style/RedTheme" />
         <activity

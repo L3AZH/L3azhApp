@@ -9,13 +9,26 @@
     <string name="role_label">Loại Tài khoản</string>
     <string name="signin_label">Đăng nhập</string>
     <string name="forgot_password_label"><u>Quên mật khẩu</u></string>
-    <string name="logout_label">Đăng xuất</string>
     <string name="ptit_label">PTIT</string>
     <string name="student_role_label">Sinh Viên</string>
     <string name="student_role_code_label">SV</string>
     <string name="teacher_role_label">Giảng Viên</string>
     <string name="teacher_role_code_label">GV</string>
     <string name="error_role_code_label">Không thể chọn role</string>
+    <!--Student info fragment-->
+    <string name="name_label_student_info_fragment">Họ và tên: </string>
+    <string name="code_label_student_info_fragment">Mã: </string>
+    <!--Student home fragment-->
+    <string name="calendar_label">Thời khoá biểu</string>
+    <string name="test_calendar_label">Lịch thi</string>
+    <string name="point_student_label">Điểm</string>
+    <string name="education_calendar_label">Chương trình \n đào tạo</string>
+    <string name="education_fee_label">Học phí</string>
+    <string name="health_declaration">Khai báo y tế</string>
+    <!--Label for navigaiton-->
+    <string name="home_label_menu_bottom_nav">Trang chủ</string>
+    <string name="info_label_menu_drawer_nav">Thông tin cá nhân</string>
+    <string name="logout_label">Đăng xuất</string>
     <!-- Error log label -->
     <string name="get_role_from_sharePref_null">Role get from SharePreference is null</string>
     <string name="invalid_role_from_sharePref">Role get from SharePreference is invalid</string>

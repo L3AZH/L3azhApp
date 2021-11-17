@@ -3,15 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/drawable/carlender_foreground.xml" value="0.2015625" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2546875" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/drawable/ic_baseline_logout_32.xml" value="0.24722222222222223" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_student_home.xml" value="0.15715579710144928" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_teacher_home.xml" value="0.1160081053698075" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/dialog_loading.xml" value="0.1160081053698075" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
-        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_student_home.xml" value="0.15081521739130435" />
-        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_student_info.xml" value="0.15081521739130435" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_student_home.xml" value="0.264" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_student_info.xml" value="0.1" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_teacher_info.xml" value="0.1160081053698075" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/nav_header.xml" value="0.176" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/role_item_spinner.xml" value="0.1" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/menu/menu_bottom_nav_view_activity_student_home.xml" value="0.20092592592592592" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/menu/menu_bottom_nav_view_activity_teacher_home.xml" value="0.20092592592592592" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/menu/menu_nav_view_activity_student_home.xml" value="0.221025641025641" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/menu/menu_nav_view_activity_teacher_home.xml" value="0.20717948717948717" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/mipmap-anydpi-v26/carlender.xml" value="0.2015625" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/mipmap-anydpi-v26/carlender_round.xml" value="0.191015625" />
         <entry key="..\:/Users/ADMIN/Desktop/DoAnTotNghiep/L3azhApp/app/src/main/res/drawable/cursor_edit_text_red_color.xml" value="0.2657407407407407" />
         <entry key="..\:/Users/ADMIN/Desktop/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_home.xml" value="0.11676798378926039" />
         <entry key="..\:/Users/ADMIN/Desktop/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_login.xml" value="0.12360688956433637" />

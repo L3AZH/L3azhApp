@@ -6,7 +6,11 @@
     app:startDestination="@id/teacherHomeFragment">
     <fragment
         android:id="@+id/teacherHomeFragment"
-        android:name="com.l3azh.l3azhapp.view.home_teacher.home_fragment.TeacherHomeFragment"
+        android:name="com.l3azh.l3azhapp.view.teacher.home_fragment.TeacherHomeFragment"
         android:label="fragment_teacher_home"
         tools:layout="@layout/fragment_teacher_home" />
+    <fragment
+        android:id="@+id/teacherInfoFragment"
+        android:name="com.l3azh.l3azhapp.view.teacher.home_fragment.TeacherInfoFragment"
+        android:label="TeacherInfoFragment" />
 </navigation>

@@ -8,16 +8,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AutoCompleteTextView
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.snackbar.Snackbar
 import com.l3azh.l3azhapp.R
 import com.l3azh.l3azhapp.adapter.RoleSpinnerAdapter
 import com.l3azh.l3azhapp.databinding.FragmentSignInBinding
+import com.l3azh.l3azhapp.dialog.LoadingDialog
 import com.l3azh.l3azhapp.utils.Utils
-import com.l3azh.l3azhapp.view.home_student.StudentHomeActivity
-import com.l3azh.l3azhapp.view.home_teacher.TeacherHomeActivity
+import com.l3azh.l3azhapp.view.student.StudentHomeActivity
+import com.l3azh.l3azhapp.view.teacher.TeacherHomeActivity
 import com.l3azh.l3azhapp.viewmodel.login.SigninViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class SignInFragment : Fragment() {
@@ -56,12 +57,17 @@ class SignInFragment : Fragment() {
             val roleCodeSelected =
                 roleAdapter.getCodeRoleForItemSelected(binding.editTextRole.text.toString())
             CoroutineScope(Dispatchers.Default).launch {
-                val result = viewModel.login(
+                LoadingDialog.show(requireActivity())
+                val goToStudentHomeActivity =
+                        Intent(requireContext(), StudentHomeActivity::class.java)
+                startActivity(goToStudentHomeActivity)
+                /*val result = viewModel.login(
                     requireContext(),
                     binding.editTextUsername.text.toString(),
                     binding.editTextPassword.text.toString(),
                     roleCodeSelected
                 ).await()
+                LoadingDialog.close()
                 if (result["flag"] as Boolean) {
                     when (roleCodeSelected) {
                         getString(R.string.teacher_role_code_label) -> {
@@ -77,7 +83,7 @@ class SignInFragment : Fragment() {
                     }
                 } else {
                     Utils.showSnackbarError(result["message"].toString(), binding.root)
-                }
+                }*/
             }
         }
         binding.textviewForgotPassword.setOnClickListener {
