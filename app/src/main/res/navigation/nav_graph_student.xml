@@ -9,10 +9,35 @@
         android:id="@+id/studentHomeFragment"
         android:name="com.l3azh.l3azhapp.view.student.home_fragment.StudentHomeFragment"
         android:label="fragment_student_home"
-        tools:layout="@layout/fragment_student_home" />
+        tools:layout="@layout/fragment_student_home" >
+        <action
+            android:id="@+id/action_studentHomeFragment_to_medicalDeclarationFragment"
+            app:destination="@id/medicalDeclarationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/studentInfoFragment"
         android:name="com.l3azh.l3azhapp.view.student.home_fragment.StudentInfoFragment"
         android:label="fragment_student_info"
         tools:layout="@layout/fragment_student_info" />
+    <fragment
+        android:id="@+id/medicalDeclarationFragment"
+        android:name="com.l3azh.l3azhapp.view.student.medical_declaration_fragment.MedicalDeclarationFragment"
+        android:label="fragment_medical_declaration"
+        tools:layout="@layout/fragment_medical_declaration" >
+        <action
+            android:id="@+id/action_medicalDeclarationFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_medicalDeclarationFragment_to_createNewMedicalDeclarationFragment"
+            app:destination="@id/createNewMedicalDeclarationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewMedicalDeclarationFragment"
+        android:name="com.l3azh.l3azhapp.view.student.medical_declaration_fragment.CreateNewMedicalDeclarationFragment"
+        android:label="fragment_create_new_medical_declaration"
+        tools:layout="@layout/fragment_create_new_medical_declaration" >
+        <action
+            android:id="@+id/action_createNewMedicalDeclarationFragment_to_medicalDeclarationFragment"
+            app:destination="@id/medicalDeclarationFragment" />
+    </fragment>
 </navigation>

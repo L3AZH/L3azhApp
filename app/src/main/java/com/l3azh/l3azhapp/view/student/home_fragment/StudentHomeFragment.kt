@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.l3azh.l3azhapp.R
 import com.l3azh.l3azhapp.databinding.FragmentStudentHomeBinding
 
@@ -24,5 +25,14 @@ class StudentHomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setOnClickImageView()
+    }
+
+    fun setOnClickImageView(){
+        binding.imageViewHealDeclaration.setOnClickListener {
+            val goToHealDeclarationScreen =
+                StudentHomeFragmentDirections.actionStudentHomeFragmentToMedicalDeclarationFragment()
+            findNavController().navigate(goToHealDeclarationScreen)
+        }
     }
 }

@@ -1,10 +1,8 @@
 package com.l3azh.l3azhapp.api
 
+import com.l3azh.l3azhapp.api.req.HealthDeclarationItemReqData
 import com.l3azh.l3azhapp.api.req.LoginReqData
-import com.l3azh.l3azhapp.api.res.BaseRes
-import com.l3azh.l3azhapp.api.res.GetInfoTeacherResData
-import com.l3azh.l3azhapp.api.res.GetInfoStudentResData
-import com.l3azh.l3azhapp.api.res.LoginResData
+import com.l3azh.l3azhapp.api.res.*
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -28,4 +26,16 @@ interface L3azhApi {
         @Header("Authorization") bearerToken: String,
         @Query("magv") codeOfTeacher: String
     ): Response<BaseRes<GetInfoTeacherResData>>
+
+    @GET("tokhai/get-to-khai")
+    suspend fun getListHealthDeclaration(
+        @Header("Authorization") bearerToken: String,
+        @Query("masv") codeOfStudent: String
+    ):Response<BaseRes<List<GetHealthDeclarationItemResData>>>
+
+    @POST("tokhai/create-to-khai")
+    suspend fun createNewHealthDeclaration(
+        @Header("Authorization") bearerToken: String,
+        @Body healthDeclarationItemRes: HealthDeclarationItemReqData
+    ):Response<BaseRes<CreateNewHealthDeclarationResData>>
 }

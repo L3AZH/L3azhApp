@@ -61,7 +61,7 @@ class SignInFragment : Fragment() {
                 val goToStudentHomeActivity =
                         Intent(requireContext(), StudentHomeActivity::class.java)
                 startActivity(goToStudentHomeActivity)
-                /*val result = viewModel.login(
+                val result = viewModel.login(
                     requireContext(),
                     binding.editTextUsername.text.toString(),
                     binding.editTextPassword.text.toString(),
@@ -83,7 +83,7 @@ class SignInFragment : Fragment() {
                     }
                 } else {
                     Utils.showSnackbarError(result["message"].toString(), binding.root)
-                }*/
+                }
             }
         }
         binding.textviewForgotPassword.setOnClickListener {

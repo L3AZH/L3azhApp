@@ -1,11 +1,9 @@
 package com.l3azh.l3azhapp.repository
 
 import com.l3azh.l3azhapp.api.L3azhApi
+import com.l3azh.l3azhapp.api.req.HealthDeclarationItemReqData
 import com.l3azh.l3azhapp.api.req.LoginReqData
-import com.l3azh.l3azhapp.api.res.BaseRes
-import com.l3azh.l3azhapp.api.res.GetInfoStudentResData
-import com.l3azh.l3azhapp.api.res.GetInfoTeacherResData
-import com.l3azh.l3azhapp.api.res.LoginResData
+import com.l3azh.l3azhapp.api.res.*
 import com.l3azh.l3azhapp.utils.Constant
 import retrofit2.Response
 import javax.inject.Inject
@@ -30,4 +28,16 @@ class Repository @Inject constructor(private val api: L3azhApi) {
         codeOfTeacher: String
     ): Response<BaseRes<GetInfoTeacherResData>> =
         api.getTeacherInfo("Bearer $bearerToken", codeOfTeacher)
+
+    suspend fun getListHealthDeclaration(
+        bearerToken: String,
+        codeOfStudent: String
+    ): Response<BaseRes<List<GetHealthDeclarationItemResData>>> =
+        api.getListHealthDeclaration("Bearer $bearerToken", codeOfStudent)
+
+    suspend fun createNewHealthDeclaration(
+        bearerToken: String,
+        data: HealthDeclarationItemReqData
+    ): Response<BaseRes<CreateNewHealthDeclarationResData>> =
+        api.createNewHealthDeclaration("Bearer $bearerToken", data)
 }

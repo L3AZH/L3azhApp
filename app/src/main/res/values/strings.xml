@@ -25,6 +25,16 @@
     <string name="education_calendar_label">Chương trình \n đào tạo</string>
     <string name="education_fee_label">Học phí</string>
     <string name="health_declaration">Khai báo y tế</string>
+    <!-- Student medical declaration-->
+    <string name="fast_declaration_label">Khai báo nhanh</string>
+    <string name="save_declaration_label">Lưu tờ khai</string>
+    <string name="date_label_medical_declaration">Ngày</string>
+    <string name="time_label_medical_declaration">Giờ</string>
+    <string name="health_status_label">Tình trạng sức khoẻ</string>
+    <string name="start_destination_label">Nơi đi</string>
+    <string name="end_destination_label">Nơi đến</string>
+    <string name="normal_heal_status_label">Bình thường</string>
+    <string name="bad_heal_status_label">Sốt, ho, khó thở</string>
     <!--Label for navigaiton-->
     <string name="home_label_menu_bottom_nav">Trang chủ</string>
     <string name="info_label_menu_drawer_nav">Thông tin cá nhân</string>

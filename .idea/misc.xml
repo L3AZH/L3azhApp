@@ -9,12 +9,18 @@
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_student_home.xml" value="0.15715579710144928" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_teacher_home.xml" value="0.1160081053698075" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/dialog_loading.xml" value="0.1160081053698075" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/error_inform_dialog_layout.xml" value="0.1" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_create_new_medical_declaration.xml" value="0.11953551912568305" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_medical_declaration.xml" value="0.11953551912568305" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_student_home.xml" value="0.264" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_student_info.xml" value="0.1" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_teacher_info.xml" value="0.1160081053698075" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/heal_status_item_spinner.xml" value="0.1" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/medical_declaration_rv_item.xml" value="0.11953551912568305" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/nav_header.xml" value="0.176" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/role_item_spinner.xml" value="0.1" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/success_inform_dialog_layout.xml" value="0.1" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/menu/menu_bottom_nav_view_activity_student_home.xml" value="0.20092592592592592" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/menu/menu_bottom_nav_view_activity_teacher_home.xml" value="0.20092592592592592" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/menu/menu_nav_view_activity_student_home.xml" value="0.221025641025641" />
