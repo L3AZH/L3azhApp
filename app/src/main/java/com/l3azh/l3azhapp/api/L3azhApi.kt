@@ -38,4 +38,10 @@ interface L3azhApi {
         @Header("Authorization") bearerToken: String,
         @Body healthDeclarationItemRes: HealthDeclarationItemReqData
     ):Response<BaseRes<CreateNewHealthDeclarationResData>>
+
+    @GET("CTDT/getCTDT")
+    suspend fun getListCTDT(
+        @Header("Authorization") bearerToken: String,
+        @Query("masv") codeOfStudent: String
+    ):Response<BaseRes<List<GetCTDTItemResData>>>
 }

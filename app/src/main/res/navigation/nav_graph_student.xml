@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_studentHomeFragment_to_medicalDeclarationFragment"
             app:destination="@id/medicalDeclarationFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_ctdtFragment"
+            app:destination="@id/ctdtFragment" />
     </fragment>
     <fragment
         android:id="@+id/studentInfoFragment"
@@ -39,5 +42,13 @@
         <action
             android:id="@+id/action_createNewMedicalDeclarationFragment_to_medicalDeclarationFragment"
             app:destination="@id/medicalDeclarationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ctdtFragment"
+        android:name="com.l3azh.l3azhapp.view.student.ctdt_fragment.CtdtFragment"
+        android:label="CtdtFragment" >
+        <action
+            android:id="@+id/action_ctdtFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
     </fragment>
 </navigation>

@@ -35,6 +35,10 @@
     <string name="end_destination_label">Nơi đến</string>
     <string name="normal_heal_status_label">Bình thường</string>
     <string name="bad_heal_status_label">Sốt, ho, khó thở</string>
+    <!-- Student ctdt -->
+    <string name="name_subject_label">Tên môn học: </string>
+    <string name="code_subject_label">Mã môn học: </string>
+    <string name="number_of_credits_label">Số tín chỉ: </string>
     <!--Label for navigaiton-->
     <string name="home_label_menu_bottom_nav">Trang chủ</string>
     <string name="info_label_menu_drawer_nav">Thông tin cá nhân</string>

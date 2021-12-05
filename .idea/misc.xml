@@ -8,9 +8,11 @@
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/drawable/ic_baseline_logout_32.xml" value="0.24722222222222223" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_student_home.xml" value="0.15715579710144928" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/activity_teacher_home.xml" value="0.1160081053698075" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/ctdt_rv_item.xml" value="0.1" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/dialog_loading.xml" value="0.1160081053698075" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/error_inform_dialog_layout.xml" value="0.1" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_create_new_medical_declaration.xml" value="0.11953551912568305" />
+        <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_ctdt.xml" value="0.1092896174863388" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_medical_declaration.xml" value="0.11953551912568305" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
         <entry key="..\:/DoAnTotNghiep/L3azhApp/app/src/main/res/layout/fragment_student_home.xml" value="0.264" />

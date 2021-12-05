@@ -40,4 +40,10 @@ class Repository @Inject constructor(private val api: L3azhApi) {
         data: HealthDeclarationItemReqData
     ): Response<BaseRes<CreateNewHealthDeclarationResData>> =
         api.createNewHealthDeclaration("Bearer $bearerToken", data)
+
+    suspend fun getListCTDT(
+        bearerToken: String,
+        codeOfStudent: String
+    ): Response<BaseRes<List<GetCTDTItemResData>>> =
+        api.getListCTDT("Bearer $bearerToken", codeOfStudent)
 }

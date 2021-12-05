@@ -34,5 +34,10 @@ class StudentHomeFragment : Fragment() {
                 StudentHomeFragmentDirections.actionStudentHomeFragmentToMedicalDeclarationFragment()
             findNavController().navigate(goToHealDeclarationScreen)
         }
+        binding.imageViewCtdt.setOnClickListener {
+            val goToCTDTScreen =
+                StudentHomeFragmentDirections.actionStudentHomeFragmentToCtdtFragment()
+            findNavController().navigate(goToCTDTScreen)
+        }
     }
 }

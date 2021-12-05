@@ -2,6 +2,7 @@ package com.l3azh.l3azhapp.di
 
 import com.l3azh.l3azhapp.viewmodel.login.SigninViewModel
 import com.l3azh.l3azhapp.viewmodel.login.SplashViewModel
+import com.l3azh.l3azhapp.viewmodel.student.StudentCTDTViewModel
 import com.l3azh.l3azhapp.viewmodel.student.StudentInfoViewModel
 import com.l3azh.l3azhapp.viewmodel.student.StudentMedicalDeclarationViewModel
 import com.l3azh.l3azhapp.viewmodel.teacher.TeacherInfoViewModel
@@ -16,4 +17,5 @@ interface AppComponent {
     fun inject(studentInfoViewModel: StudentInfoViewModel)
     fun inject(teacherInfoViewModel: TeacherInfoViewModel)
     fun inject(studentMedicalDeclarationViewModel: StudentMedicalDeclarationViewModel)
+    fun inject(studentCTDTViewModel: StudentCTDTViewModel)
 }
