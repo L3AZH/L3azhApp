@@ -2,9 +2,7 @@ package com.l3azh.l3azhapp.di
 
 import com.l3azh.l3azhapp.viewmodel.login.SigninViewModel
 import com.l3azh.l3azhapp.viewmodel.login.SplashViewModel
-import com.l3azh.l3azhapp.viewmodel.student.StudentCTDTViewModel
-import com.l3azh.l3azhapp.viewmodel.student.StudentInfoViewModel
-import com.l3azh.l3azhapp.viewmodel.student.StudentMedicalDeclarationViewModel
+import com.l3azh.l3azhapp.viewmodel.student.*
 import com.l3azh.l3azhapp.viewmodel.teacher.TeacherInfoViewModel
 import dagger.Component
 import javax.inject.Singleton
@@ -18,4 +16,7 @@ interface AppComponent {
     fun inject(teacherInfoViewModel: TeacherInfoViewModel)
     fun inject(studentMedicalDeclarationViewModel: StudentMedicalDeclarationViewModel)
     fun inject(studentCTDTViewModel: StudentCTDTViewModel)
+    fun inject(studentTimeTableViewModel: StudentTimeTableViewModel)
+    fun inject(studentExamDayViewModel: StudentExamDayViewModel)
+    fun inject(studentPointViewModel: StudentPointViewModel)
 }

@@ -39,6 +39,34 @@
     <string name="name_subject_label">Tên môn học: </string>
     <string name="code_subject_label">Mã môn học: </string>
     <string name="number_of_credits_label">Số tín chỉ: </string>
+    <!-- Student timeTable-->
+    <string name="semester_school_year_label">Học kì năm học</string>
+    <string name="list_week_number_label">Danh sách tuần</string>
+    <string name="code_subject_time_table_label">Mã môn học: \u0020</string>
+    <string name="day_number_in_week_label">Số thứ trong tuần: \u0020</string>
+    <string name="class_room_time_table_label">Phòng học: \u0020</string>
+    <string name="session_begin_time_table_label">Tiết bắt đầu: \u0020</string>
+    <string name="time_begin_time_table_label">Giờ bắt đầu: \u0020</string>
+    <!-- Student exam and point-->
+    <string name="code_subject_exam_point_label">Mã môn học: \u0020</string>
+    <string name="name_subject_exam_point_label">Tên môn học: \u0020</string>
+    <string name="exam_day_exam_point_label">Ngày thi: \u0020</string>
+    <string name="exam_room_exam_point_label">Phòng thi: \u0020</string>
+    <string name="session_begin_exam_point_label">Tiết bắt đầu: \u0020</string>
+    <string name="time_begin_exam_point_label">Giờ bắt đầu: \u0020</string>
+    <string name="minus_number_exam_point_label">Số phút: \u0020</string>
+
+    <string name="point_system_cc_exam_point_label">Hệ điểm CC: \u0020</string>
+    <string name="point_system_se_exam_point_label">Hệ điểm SE: \u0020</string>
+    <string name="point_system_kt_exam_point_label">Hệ điểm KT: \u0020</string>
+    <string name="point_system_th_exam_point_label">Hệ điểm TH: \u0020</string>
+    <string name="point_system_thi_exam_point_label">Hệ điểm Thi: \u0020</string>
+
+    <string name="point_cc_exam_point_label">Điểm CC: \u0020</string>
+    <string name="point_se_exam_point_label">Điểm SE: \u0020</string>
+    <string name="point_kt_exam_point_label">Điểm KT: \u0020</string>
+    <string name="point_th_exam_point_label">Điểm TH: \u0020</string>
+    <string name="point_thi_exam_point_label">Điểm Thi: \u0020</string>
     <!--Label for navigaiton-->
     <string name="home_label_menu_bottom_nav">Trang chủ</string>
     <string name="info_label_menu_drawer_nav">Thông tin cá nhân</string>

@@ -22,7 +22,6 @@ class HealthDeclarationAdapter(
         ): Boolean {
             return oldItem.codeDeclaration == newItem.codeDeclaration
         }
-
         override fun areContentsTheSame(
             oldItem: GetHealthDeclarationItemResData,
             newItem: GetHealthDeclarationItemResData

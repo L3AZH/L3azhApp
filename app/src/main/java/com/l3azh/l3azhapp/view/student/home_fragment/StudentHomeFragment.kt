@@ -39,5 +39,20 @@ class StudentHomeFragment : Fragment() {
                 StudentHomeFragmentDirections.actionStudentHomeFragmentToCtdtFragment()
             findNavController().navigate(goToCTDTScreen)
         }
+        binding.imageViewTimeTable.setOnClickListener {
+            val goToTimeTableScreen =
+                StudentHomeFragmentDirections.actionStudentHomeFragmentToStudentTimeTableFragment()
+            findNavController().navigate(goToTimeTableScreen)
+        }
+        binding.imageViewExamDay.setOnClickListener {
+            val goToExamDayScreen =
+                StudentHomeFragmentDirections.actionStudentHomeFragmentToStudentExamFragment()
+            findNavController().navigate(goToExamDayScreen)
+        }
+        binding.imageViewPoint.setOnClickListener {
+            val goToPointScreen =
+                StudentHomeFragmentDirections.actionStudentHomeFragmentToStudentPointFragment()
+            findNavController().navigate(goToPointScreen)
+        }
     }
 }

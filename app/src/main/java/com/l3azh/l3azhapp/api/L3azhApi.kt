@@ -44,4 +44,31 @@ interface L3azhApi {
         @Header("Authorization") bearerToken: String,
         @Query("masv") codeOfStudent: String
     ):Response<BaseRes<List<GetCTDTItemResData>>>
+
+    @GET("lichhoc/get-lichhoc")
+    suspend fun getLichHoc(
+        @Header("Authorization") bearerToken: String,
+        @Query("hockinamhocsotuan") semesterSchoolYearWeek:String,
+        @Query("masinhvien") codeOfStudent: String
+    ):Response<BaseRes<List<GetLichHocItemResData>>>
+
+    @GET("danhsachhockinamhoctuan/get-danhsachhockinamhoctuan")
+    suspend fun getListSemesterSchoolYearWeek(
+        @Header("Authorization") bearerToken: String,
+        @Query("hockinamhoc") semesterSchoolYear: String
+    ):Response<BaseRes<List<GetSemesterSchoolYearWeekItemResData>>>
+
+    @GET("lichthivadiem/get-lichthi")
+    suspend fun getListExamDay(
+        @Header("Authorization") bearerToken: String,
+        @Query("hockinamhoc") semesterSchoolYear: String,
+        @Query("masinhvien") codeOfStudent: String
+    ):Response<BaseRes<List<GetExamDayItemResData>>>
+
+    @GET("lichthivadiem/get-diemthi")
+    suspend fun getListPoint(
+        @Header("Authorization") bearerToken: String,
+        @Query("hockinamhoc") semesterSchoolYear: String,
+        @Query("masinhvien") codeOfStudent: String
+    ):Response<BaseRes<List<GetPointItemResData>>>
 }

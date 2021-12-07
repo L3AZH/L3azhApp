@@ -46,4 +46,31 @@ class Repository @Inject constructor(private val api: L3azhApi) {
         codeOfStudent: String
     ): Response<BaseRes<List<GetCTDTItemResData>>> =
         api.getListCTDT("Bearer $bearerToken", codeOfStudent)
+
+    suspend fun getTimeTable(
+        bearerToken: String,
+        semesterSchoolYearWeek: String,
+        codeOfStudent: String
+    ): Response<BaseRes<List<GetLichHocItemResData>>> =
+        api.getLichHoc("Bearer $bearerToken", semesterSchoolYearWeek, codeOfStudent)
+
+    suspend fun getListSemsterSchoolYearWeek(
+        bearerToken: String,
+        semesterSchoolYear: String
+    ): Response<BaseRes<List<GetSemesterSchoolYearWeekItemResData>>> =
+        api.getListSemesterSchoolYearWeek("Bearer $bearerToken", semesterSchoolYear)
+
+    suspend fun getListExamDay(
+        bearerToken: String,
+        semesterSchoolYear: String,
+        codeOfStudent: String
+    ): Response<BaseRes<List<GetExamDayItemResData>>> =
+        api.getListExamDay("Bearer $bearerToken", semesterSchoolYear, codeOfStudent)
+
+    suspend fun getListPoint(
+        bearerToken: String,
+        semesterSchoolYear: String,
+        codeOfStudent: String
+    ): Response<BaseRes<List<GetPointItemResData>>> =
+        api.getListPoint("Bearer $bearerToken", semesterSchoolYear, codeOfStudent)
 }

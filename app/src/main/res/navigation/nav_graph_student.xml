@@ -16,6 +16,15 @@
         <action
             android:id="@+id/action_studentHomeFragment_to_ctdtFragment"
             app:destination="@id/ctdtFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentTimeTableFragment"
+            app:destination="@id/studentTimeTableFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentExamFragment"
+            app:destination="@id/studentExamFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentPointFragment"
+            app:destination="@id/studentPointFragment" />
     </fragment>
     <fragment
         android:id="@+id/studentInfoFragment"
@@ -49,6 +58,33 @@
         android:label="CtdtFragment" >
         <action
             android:id="@+id/action_ctdtFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentTimeTableFragment"
+        android:name="com.l3azh.l3azhapp.view.student.timetable_fragment.StudentTimeTableFragment"
+        android:label="fragment_student_time_table"
+        tools:layout="@layout/fragment_student_time_table" >
+        <action
+            android:id="@+id/action_studentTimeTableFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentExamFragment"
+        android:name="com.l3azh.l3azhapp.view.student.exam_and_point_fragment.StudentExamFragment"
+        android:label="fragment_student_exam"
+        tools:layout="@layout/fragment_student_exam" >
+        <action
+            android:id="@+id/action_studentExamFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentPointFragment"
+        android:name="com.l3azh.l3azhapp.view.student.exam_and_point_fragment.StudentPointFragment"
+        android:label="fragment_student_point"
+        tools:layout="@layout/fragment_student_point" >
+        <action
+            android:id="@+id/action_studentPointFragment_to_studentHomeFragment"
             app:destination="@id/studentHomeFragment" />
     </fragment>
 </navigation>
